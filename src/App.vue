@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AgGrid/>
+  <!-- <TabulatorGrid/> -->
+  <!-- <ExcelEditor/> -->
+
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AgGrid from './components/AgGrid.vue'
+//import ExcelEditor from './components/ExcelEditor.vue'
+//import TabulatorGrid from './components/TabulatorGrid.vue'
 export default {
   name: 'App',
+  data(){
+    return {
+       products : 1
+      , modalNum : 0
+    }
+  },
+
+  methods : {
+
+  },
   components: {
-    HelloWorld
+    AgGrid : AgGrid,
+    //TabulatorGrid: TabulatorGrid,
+    //ExcelEditor: ExcelEditor,
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

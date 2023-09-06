@@ -1,4 +1,15 @@
-import { createApp } from 'vue'
+//import './style.css'
 import App from './App.vue'
+import {
+  createApp
+} from "vue";
+import VueExcelEditor from "vue3-excel-editor";
+import {
+  ApexGrid
+} from 'apex-grid';
+ApexGrid.register();
 
-createApp(App).mount('#app')
+
+const app = createApp(App);
+app.use(VueExcelEditor);
+app.mount("#app");

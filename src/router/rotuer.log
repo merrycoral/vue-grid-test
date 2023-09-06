@@ -1,0 +1,14 @@
+import { RouteRecordRaw } from "vue-router";
+
+import Tabulator from '../components/Tabulator.vue';
+
+export const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    redirect: { path: '/'}
+  },
+  {
+    path: 'grid',
+    
+  }
+]

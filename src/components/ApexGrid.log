@@ -1,0 +1,11 @@
+<template>
+  <section>
+    <apex-grid auto-generate :data.prop="users"></apex-grid>
+  </section>
+</template>
+
+<script setup>
+  import 'apex-grid/define';
+
+  const users = [...];
+</script>
