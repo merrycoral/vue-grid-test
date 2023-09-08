@@ -1271,8 +1271,8 @@
     {id:10, name:"James Newman", progress:73, location:"Japan", gender:"male", rating:5, col:"red", dob:"22/03/1998", car:false, lucky_no:9, lorem:"Lorem ipsum dolor sit amet, elit consectetur adipisicing "},
     ];  
 
-  tableData.value = [...tableData.value, ...tableData.value]
-  tableData.value = [...tableData.value, ...tableData.value]
+  tableData.value = [...tableData.value, ...tableData.value, ...tableData.value]
+  tableData.value = [...tableData.value, ...tableData.value, ...tableData.value, ...tableData.value]
 
   onMounted(() => {
     let pdfJS = document.createElement('script')

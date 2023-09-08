@@ -9621,6 +9621,13 @@ let jsondata = [];
     birth: "1990-09-01",
   },
 ] 
+
+jsondata = [...jsondata, ...jsondata, ...jsondata]
+jsondata = [...jsondata, ...jsondata, ...jsondata]
+jsondata = [...jsondata, ...jsondata, ...jsondata]
+//jsondata = [...jsondata, ...jsondata]
+
+//jsondata = jsondata.map((e) => e.gender==='M'? (e.gender="남자") : (e.gender="여자"))
 export default {
   name: "App",
   data() {
@@ -9665,6 +9672,6 @@ export default {
 }
 
 .vue-excel-editor{
-  height: 100%;
+  height: 85vh;
 }
 </style>

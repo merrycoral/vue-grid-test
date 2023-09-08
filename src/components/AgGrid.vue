@@ -587,8 +587,9 @@ let arr = [
   arr = [...arr, ...arr, ...arr];
   arr = [...arr, ...arr, ...arr];
   arr = [...arr, ...arr, ...arr];
-  arr = [...arr, ...arr, ...arr];
-  console.log(arr)
+  arr = [...arr, ...arr, ...arr, ...arr];
+  arr = [...arr, ...arr, ...arr, ...arr];
+  arr = [...arr, ...arr, ...arr, ...arr];
 
 
 export default {
