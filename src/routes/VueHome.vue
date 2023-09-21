@@ -1,22 +1,28 @@
 <template>
-  
+    <GridDefault/>
+    <!-- 
+
       <AgGrid/>
       <TabulatorGrid/>
       <ExcelEditor/>
+    -->
 </template>
 
 <script>
 
 
-import AgGrid from '../components/AgGrid.vue'
-import ExcelEditor from '../components/ExcelEditor.vue'
-import TabulatorGrid from '../components/TabulatorGrid.vue'
+import GridDefault from '@/components/GridDefault.vue';
+// import AgGrid from '../components/AgGrid.vue'
+// import ExcelEditor from '../components/ExcelEditor.vue'
+// import TabulatorGrid from '../components/TabulatorGrid.vue'
 export default {
   components: {
-    AgGrid,
-    ExcelEditor,
-    TabulatorGrid
-  },
+    
+    // AgGrid,
+    // ExcelEditor,
+    // TabulatorGrid,
+    GridDefault
+},
   created() {
     //this.$store.commit('movie/resetMovies')
   }
