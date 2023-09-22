@@ -1,5 +1,5 @@
 <template>
-<h1>grid 선택</h1>
+<h3>Grid를 선택하세요.</h3>
 
 </template>
 

@@ -1372,13 +1372,15 @@ const exportDoc = (ext) => {
 </script>
 
 <template>
-  xlsx는 sheetjs lib, pdf는 <a href="https://github.com/parallax/jsPDF">jspdf lib</a> 사용
+  <h1>Tabulator</h1>
+  xlsx는 sheetjs library 추가하여 가능, pdf 다운로드 기능은 <a href="https://github.com/parallax/jsPDF">jspdf lib</a> 추가하여 가능
   
-  <div>
+  <div class="down-btns">
+    <a href="https://tabulator.info/">공식사이트</a>
     <button id="download-csv" @click="exportDoc('csv')">Download CSV</button>
     <button id="download-json" @click="exportDoc('json')">Download JSON</button>
-    <button id="download-xlsx" @click="exportDoc('xlsx')">Download XLSX</button>
-    <button id="download-pdf" @click="exportDoc('pdf')">Download PDF</button>
+    <!-- <button id="download-xlsx" @click="exportDoc('xlsx')">Download XLSX</button> -->
+    <!-- <button id="download-pdf" @click="exportDoc('pdf')">Download PDF</button> -->
     <button id="download-html" @click="exportDoc('html')">Download HTML</button>
   </div>
   <div ref="table"></div>
@@ -1389,10 +1391,23 @@ const exportDoc = (ext) => {
 @import "../scss/tabulator.scss";
 
 #app{
-  height: 90vh;
+  height: 65vh;
 }
 .tabulator{
   height: inherit;
+}
+div.down-btns{
+  margin-bottom: 10px;
+}
+
+div.down-btns button{
+  background-color: #a8a8a8;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 /* ... */

@@ -1,7 +1,8 @@
 <template>
 <h1>Ag-grid</h1>
-<p>xlsx 다운로드는 유료</p>
-<div style="margin: 10px 0;">
+<p>xlsx 다운로드는 유료버전에서 가능</p>
+<div class="down-btns" style="margin: 10px 0;">
+    <a href="https://www.ag-grid.com/">공식사이트</a>
       <!-- <button v-on:click="onBtnUpdate()">Show CSV export content text</button> -->
       <button v-on:click="onBtnExport()">Download CSV export file</button>
   </div>

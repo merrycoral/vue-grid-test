@@ -1,6 +1,11 @@
 <template>
-  <button @click="exportAsExcel"> Export Excel </button>
-  <button @click="exportAsCsv"> Export CSV </button>
+  <h1>vue3-excel-editor
+  </h1>
+  <div class="down-btns">
+    <a href="https://www.npmjs.com/package/vue3-excel-editor">공식 npm</a>
+    <button @click="exportAsExcel"> Export Excel </button>
+    <button @click="exportAsCsv"> Export CSV </button>
+  </div>
   <vue-excel-editor v-model="jsondata" ref="grid">
       <vue-excel-column field="user"   label="User ID"       type="string" width="80px" />
       <vue-excel-column field="name"   label="Name"          type="string" width="150px" />
@@ -9670,6 +9675,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 
 .vue-excel-editor{
   height: 85vh;

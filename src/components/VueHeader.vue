@@ -28,7 +28,7 @@ export default {
     return {
       navigations: [
         {
-          name: 'ag',
+          name: 'ag-grid',
           href: '/aggrid'
         },
         {
@@ -36,7 +36,7 @@ export default {
           href: '/tabulator',
         },
         {
-          name: 'exceleditor',
+          name: 'vue-excel-editor',
           href: '/exceleditor'
         }
       ]
